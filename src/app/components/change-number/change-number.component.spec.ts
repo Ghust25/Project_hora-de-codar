@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmiterComponent } from './emiter.component';
+import { ChangeNumberComponent } from './change-number.component';
 
-describe('EmiterComponent', () => {
-  let component: EmiterComponent;
-  let fixture: ComponentFixture<EmiterComponent>;
+describe('ChangeNumberComponent', () => {
+  let component: ChangeNumberComponent;
+  let fixture: ComponentFixture<ChangeNumberComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EmiterComponent ]
+      declarations: [ ChangeNumberComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EmiterComponent);
+    fixture = TestBed.createComponent(ChangeNumberComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

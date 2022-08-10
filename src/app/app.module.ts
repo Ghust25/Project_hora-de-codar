@@ -8,7 +8,8 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { TestsComponent } from './components/tests/tests.component';
 import { EventosComponent } from './components/eventos/eventos.component';
-import { EmiterComponent } from './components/emiter/emiter.component';
+import { EmitterComponent } from './components/emitter/emitter.component';
+import { ChangeNumberComponent } from './components/change-number/change-number.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EmiterComponent } from './components/emiter/emiter.component';
     IfRenderComponent,
     TestsComponent,
     EventosComponent,
-    EmiterComponent,
+    EmitterComponent,
+    ChangeNumberComponent,
   ],
   imports: [BrowserModule],
   providers: [],
