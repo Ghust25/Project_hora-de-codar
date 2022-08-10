@@ -1,0 +1,12 @@
+<div class="divider" *ngIf="canShow">
+  <h2>Renderização condicional</h2>
+  <div>Estamos mostrando isso pq foi permitido!</div>
+  <div  *ngIf="nome === 'Tiago'; else nameNotFound">O nome é Tiago</div>
+  <ng-template #nameNotFound>
+    Nome não encontrado
+  </ng-template>
+  <div  *ngIf="nome === 'Ray'; else nameNotFound">O nome é Tiago</div>
+  <ng-template #nameNotFound>
+    Nome não encontrado
+  </ng-template>
+</div>
