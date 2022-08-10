@@ -1,8 +1,10 @@
-<div class="divider">
-  <h2>Animais:</h2>
+<div class="divider ">
+  <h2 class="mb-3">Animais:</h2>
   <ul>
     <li *ngFor="let animal of animals">
       Nome: {{animal.name}} - Tipo: {{animal.type}}
+      <button class="btn btn-primary p-1 my-1 mx-3" (click)="showAge(animal)">Show age</button>
     </li>
   </ul>
+  <label><strong>{{animalDetails}}</strong></label>
 </div>

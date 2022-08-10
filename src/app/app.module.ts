@@ -11,6 +11,8 @@ import { EventosComponent } from './components/eventos/eventos.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+  import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
     ChangeNumberComponent,
     ListRenderComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, BrowserAnimationsModule, TooltipModule.forRoot(),],
   providers: [],
   bootstrap: [AppComponent],
 })
