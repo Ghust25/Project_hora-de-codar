@@ -1,8 +1,0 @@
-Emitindo eventos 
-
-- Podemos comunicar eventos de um componente filho para um componente pai;
-- Para isso vamos precisar do @Output, que é a saída do evento do componente filho;
-	@Input do pai para o filho
-	@Output do filho para o pai
-- Na tag de invocação do componente, escolhemos um método para executar quando o evento for emitido;
-- Exemplo: (emit)="onEmit()"
