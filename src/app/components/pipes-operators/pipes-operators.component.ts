@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pipes-operators.component.css']
 })
 export class PipesOperatorsComponent implements OnInit {
+  someText = "TESTANDO O PIPE OPERATOR";
+  today = new Date();
 
   constructor() { }
 
