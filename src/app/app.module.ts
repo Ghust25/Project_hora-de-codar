@@ -12,7 +12,8 @@ import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-  import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { PipesOperatorsComponent } from './components/pipes-operators/pipes-operators.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EmitterComponent,
     ChangeNumberComponent,
     ListRenderComponent,
+    PipesOperatorsComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule, TooltipModule.forRoot(),],
   providers: [],
