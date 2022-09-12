@@ -1,1 +1,23 @@
-<div  class="divider" [innerHTML]="htmlString"></div>
+<div class="divider">
+
+  <div [innerHTML]="htmlString"></div>
+  <hr>
+  <mat-toolbar color="primary" class="mat-elevation-z8">
+    <button mat-icon-button class="example-icon me-3" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="w-100"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+
+  <button class="btn btn-primary">click</button>
+
+</div>

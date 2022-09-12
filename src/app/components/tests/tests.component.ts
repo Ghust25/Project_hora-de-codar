@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tests.component.css']
 })
 export class TestsComponent implements OnInit {
-  htmlString = '<h1>Hello gowtham</h1>';
+  htmlString = '<h1> TESTES Abaixo </h1>';
 
   constructor() { }
 
