@@ -12,8 +12,11 @@ import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { PipesOperatorsComponent } from './components/pipes-operators/pipes-operators.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { MaterialModule } from './material/material.module';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,8 +31,15 @@ import { PipesOperatorsComponent } from './components/pipes-operators/pipes-oper
     ChangeNumberComponent,
     ListRenderComponent,
     PipesOperatorsComponent,
+    TwoWayBindingComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, TooltipModule.forRoot(),],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

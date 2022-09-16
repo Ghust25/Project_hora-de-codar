@@ -1,13 +1,21 @@
-<dir class="container">
-    <nav class="navbar bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand">Navbar</a>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+<div class="container mat-elevation-z8">
+  <mat-toolbar color = "primary" class="mt-3 w-100">
+   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="w-100"></span>
+  <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-warning" type="submit"><i class="fa-light fa-magnifying-glass"></i>Search</button>
+  </form>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+   <mat-icon>share</mat-icon>
+ </button>
+</mat-toolbar>
     <h1>Hello World Angular!</h1>
     <h2>Testando h2</h2>
     <p>Alguma coisa</p>
@@ -22,9 +30,12 @@
     <app-emitter></app-emitter>
     <app-list-render></app-list-render>
     <app-pipes-operators></app-pipes-operators>
+    <app-two-way-binding></app-two-way-binding>
 
     <div name="Testes diversos">
-      <!-- <app-tests></app-tests> -->
+      <app-tests></app-tests>
     </div>
+    <div class="margen-b"></div>
+</div>
 
-</dir>
+

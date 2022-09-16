@@ -1,0 +1,16 @@
+<div class="divider">
+  <h2>Two way data binding</h2>
+  <form class="d-flex align-items-center">
+    <p class="m-0">Nome:</p>
+    <input class="me-2" type="text" [(ngModel)]="name"
+    name="name"
+    placeholder="Digite seu nome">
+    <p class="m-0">Idade:</p>
+    <input class="me-2" type="text" [(ngModel)]="age"
+    name="age"
+    placeholder="Digite sua idade">
+  </form>
+  <div *ngIf="name !== '' && age !== ''">
+    <p>O <strong>{{name | titlecase }}</strong> tem <strong>{{age}}</strong> anos.</p>
+  </div>
+</div>
