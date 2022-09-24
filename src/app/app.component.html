@@ -3,7 +3,7 @@
    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>My App</span>
+  <span>Hello World Angular!</span>
   <span class="w-100"></span>
   <form class="d-flex" role="search">
     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -16,25 +16,32 @@
    <mat-icon>share</mat-icon>
  </button>
 </mat-toolbar>
-    <h1>Hello World Angular!</h1>
-    <h2>Testando h2</h2>
+<nav class="d-flex">
+  <a class="me-3" routerLink="/">Fist</a>
+  <a class="me-3" routerLink="/parent-data">ParentData</a>
+  <a class="me-3" routerLink="/directives">Directives</a>
+  <a class="me-3" routerLink="/if-render">IfRender</a>
+  <a class="me-3" routerLink="/eventos">Eventos</a>
+  <a class="me-3" routerLink="/emitter">Emitter</a>
+  <a class="me-3" routerLink="/list">ListRender</a>
+  <a class="me-3" routerLink="/pipes-operators">PipesOperators</a>
+  <a class="me-3" routerLink="/change-number">ChangeNumber</a>
+  <a class="me-3" routerLink="/two-way-binding">TwoWayBinding</a>
+
+  <a class="me-3" routerLink="/tests">Tests</a>
+</nav>
+     <h2>Testando h2</h2>
     <p>Alguma coisa</p>
     <div>
       <a href="#">Clique aqui!</a>
     </div>
-    <app-first-component></app-first-component>
-    <app-parent-data [name]="userName" [data]="userData"></app-parent-data>
-    <app-directives></app-directives>
-    <app-if-render></app-if-render>
-    <app-eventos></app-eventos>
-    <app-emitter></app-emitter>
-    <app-list-render></app-list-render>
-    <app-pipes-operators></app-pipes-operators>
-    <app-two-way-binding></app-two-way-binding>
+   <!-- <app-parent-data [name]="userName" [data]="userData"></app-parent-data> -->
+
+    <router-outlet></router-outlet>
 
     <!-- <div name="Testes diversos">
       <app-tests></app-tests>
-    </div> -->
+    </div>  -->
     <div class="margen-b"></div>
 </div>
 

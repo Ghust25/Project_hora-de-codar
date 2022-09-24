@@ -17,6 +17,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { AppRpoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     CommonModule,
+    AppRpoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
