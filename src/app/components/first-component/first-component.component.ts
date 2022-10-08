@@ -11,7 +11,7 @@ export class FirstComponentComponent implements OnInit {
   height: number = 163;
   sex: string = "M";
   teaching: string = "Médio completo"
-  profession: string = "developer";
+  profession: string = "Developer";
 
 
   constructor() { }
