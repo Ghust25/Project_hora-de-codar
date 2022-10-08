@@ -18,6 +18,8 @@ import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { AppRpoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ItemDattailComponent } from './components/item-dattail/item-dattail.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { AppRpoutingModule } from './app-routing.module';
     ListRenderComponent,
     PipesOperatorsComponent,
     TwoWayBindingComponent,
+    ItemDattailComponent,
   ],
   imports: [
     CommonModule,
@@ -41,6 +44,7 @@ import { AppRpoutingModule } from './app-routing.module';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

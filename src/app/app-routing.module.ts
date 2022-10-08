@@ -1,3 +1,4 @@
+import { ItemDattailComponent } from './components/item-dattail/item-dattail.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
@@ -15,6 +16,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 const routes: Routes = [
   { path: '', component: FirstComponentComponent },
   { path: 'list', component: ListRenderComponent },
+  { path: 'list/:id', component: ItemDattailComponent },
   { path: 'two-way-binding', component: TwoWayBindingComponent },
   { path: 'pipes-operators', component: PipesOperatorsComponent },
   { path: 'change-number', component: ChangeNumberComponent },
