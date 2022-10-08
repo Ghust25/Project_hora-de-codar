@@ -2,10 +2,10 @@
   <h2 class="mb-3">Animais:</h2>
   <ul>
     <li *ngFor="let animal of animals">
-      Nome: {{animal.name}} - Tipo: {{animal.type}}
-      <button class="btn btn-primary p-1 my-1 mx-3 shadow-none" (click)="showAgeAnimal(animal)">Ver Idade</button>
-      <button class="btn btn-primary p-1 my-1 mx-3 shadow-none" (click)="showTypeAnimal(animal)">Ver tipo</button>
-      <button class="btn btn-secondary p-1 my-1 mx-3 shadow-none" (click)="removeAnimal(animal)">Remover animal</button>
+      Nome: <a routerLink="/list/{{ animal.id }}" routerLinkActive="router-link-active" > {{animal.name}} </a>
+      <button class="btn btn-primary my-1 p-0 mx-2 shadow-none" (click)="showAgeAnimal(animal)">Ver Idade</button>
+      <button class="btn btn-primary my-1 p-0 mx-2 shadow-none" (click)="showTypeAnimal(animal)">Ver tipo</button>
+      <button class="btn btn-secondary my-1 p-0 mx-2 shadow-none" (click)="removeAnimal(animal)">Remover animal</button>
     </li>
   </ul>
   <label><strong>{{animalDetailsAge}}</strong></label>

@@ -9,21 +9,13 @@ import { Animal } from 'src/app/interfaces/Animal';
   styleUrls: ['./list-render.component.css'],
 })
 export class ListRenderComponent implements OnInit {
-  animals: Animal[] = [
-    { name: 'Turca', type: 'Dog', age: 4 },
-    { name: 'Tom', type: 'Cat', age: 3 },
-    { name: 'Frida', type: 'Horse', age: 5 },
-    { name: 'Leo', type: 'Dog', age: 6 },
-    { name: 'Math', type: 'Cat', age: 7 },
-    { name: 'Puca', type: 'Horse', age: 8 },
-    { name: 'Olf', type: 'Dog', age: 9 },
-    { name: 'Care', type: 'Cat', age: 2 },
-    { name: 'Duce', type: 'Horse', age: 10 },
-  ];
+  animals: Animal[] = [];
   animalDetailsAge = '';
   animalDetailsType = '';
 
-  constructor(private listServive: ListService) {}
+  constructor(private listServive: ListService) {
+    this.getAnimals()
+  }
 
   ngOnInit(): void {}
 
@@ -42,5 +34,9 @@ export class ListRenderComponent implements OnInit {
     this.animalDetailsType = '';
     this.animalDetailsAge = '';
     this.animals = this.listServive.remove(this.animals, animal);
+  }
+
+  getAnimals(): void {
+    this.listServive.getAll().subscribe((animals) => this.animals = animals);
   }
 }
