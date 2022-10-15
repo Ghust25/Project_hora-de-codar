@@ -1,12 +1,6 @@
 {
   "animals": [
     {
-      "id": 1,
-      "name": "Turca",
-      "type": "Dog",
-      "age": 4
-    },
-    {
       "id": 2,
       "name": "Tom",
       "type": "Cat",
@@ -31,22 +25,10 @@
       "age": 7
     },
     {
-      "id": 6,
-      "name": "Puca",
-      "type": "Horse",
-      "age": 8
-    },
-    {
       "id": 7,
       "name": "Olf",
       "type": "Dog",
       "age": 9
-    },
-    {
-      "id": 8,
-      "name": "Care",
-      "type": "Cat",
-      "age": 2
     },
     {
       "id": 9,
