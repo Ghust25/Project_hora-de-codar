@@ -16,8 +16,16 @@
     </button>
   </mat-toolbar>
 
-  <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+  <div class="mb-3">
+    <mat-slider thumbLabel [displayWith]="formatLabel" min="0" max="100" step="1" [value]="slidePoint" class="w-25"></mat-slider>
+  </div>
 
-  <button class="btn btn-primary">click</button>
+  <div class="d-flex mb-3">
+    <input type="range" class=" w-25 me-2 py-3" value="0" min="0" max="100" oninput="rangeValue.innerText = this.value + '%'">
+    <label id="rangeValue">0%</label>
+  </div>
 
+  <div class="mb-3">
+    <button class="btn btn-primary">click</button>
+  </div>
 </div>

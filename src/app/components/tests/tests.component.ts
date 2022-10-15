@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestsComponent implements OnInit {
   htmlString = '<h1> TESTES Abaixo </h1>';
+  slidePoint!: number
+
+  formatLabel(value: number) {
+    if (value >= 1) {
+      return Math.round(value / 1) + '%';
+    }
+    return value;
+  }
 
   constructor() { }
 
